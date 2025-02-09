@@ -1,0 +1,5 @@
+README*
+
+# Ignore all git specific files
+.git
+.gitignore
