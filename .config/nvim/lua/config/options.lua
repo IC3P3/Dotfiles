@@ -40,6 +40,10 @@ vim.opt.inccommand = "split"
 -- Highlights the line the cursor is in
 vim.opt.cursorline = true
 
+-- Minimal number of screen lines to keep above and below the cursor.
+vim.opt.scrolloff = 4
+vim.opt.sidescrolloff = 12
+
 -- Forces Neovim to use use en_US.UTF8
 vim.cmd("language en_US.UTF8")
 
