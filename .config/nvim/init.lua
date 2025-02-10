@@ -1,6 +1,7 @@
 -- Sets default options and settings specific to Neovim
 require("config/options")
 require("config/keymaps")
+require("config/autocmd")
 
 -- Downloads and initializes the lazy.nvim plugin manager
 require("lazy-bootstrap")
