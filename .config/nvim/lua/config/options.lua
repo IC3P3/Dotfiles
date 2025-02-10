@@ -37,4 +37,7 @@ vim.opt.listchars = {
 -- Preview subsitionen live
 vim.opt.inccommand = "split"
 
+-- Highlights the line the cursor is in
+vim.opt.cursorline = true
+
 -- vim: ts=2 sts=2 sw=2 et
