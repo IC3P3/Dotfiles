@@ -6,3 +6,9 @@ vim.g.maplocalleader = " "
 -- Make line numbers default
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- Syncs the clipboard between the OS and Neovim
+-- Lazy loads it at "UiEnter" to not impact the startup-time
+vim.schedule(function()
+	vim.opt.clipboard = "unnamedplus"
+end)
