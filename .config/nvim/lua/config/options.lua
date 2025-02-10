@@ -26,4 +26,12 @@ vim.opt.smartcase = true
 -- Keep signcolumn on by default
 vim.opt.signcolumn = "yes"
 
+-- Sets how neovim displays certain whitespaces
+vim.opt.list = true
+vim.opt.listchars = {
+	tab = "» ",
+	trail = "·",
+	nbsp = "␣",
+}
+
 -- vim: ts=2 sts=2 sw=2 et
