@@ -18,3 +18,10 @@ vim.opt.breakindent = true
 
 -- Save undo history to file
 vim.opt.undofile = true
+
+-- Makes searches case-insensitive unless \C or a capital letter is used
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+-- Keep signcolumn on by default
+vim.opt.signcolumn = "yes"
