@@ -15,3 +15,6 @@ end)
 
 -- Enables break indent
 vim.opt.breakindent = true
+
+-- Save undo history to file
+vim.opt.undofile = true
