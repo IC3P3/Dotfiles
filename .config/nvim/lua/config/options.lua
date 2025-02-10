@@ -23,5 +23,4 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- Keep signcolumn on by default
-vim.opt.signcolumn = "yes"
+-- vim: ts=2 sts=2 sw=2 et
