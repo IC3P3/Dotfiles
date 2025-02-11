@@ -1,3 +1,6 @@
+-- A set of constants to change some settings
+require("config/constants")
+
 -- Sets default options and settings specific to Neovim
 require("config/options")
 require("config/keymaps")
