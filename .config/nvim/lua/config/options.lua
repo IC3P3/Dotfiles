@@ -45,12 +45,18 @@ vim.opt.scrolloff = 4
 vim.opt.sidescrolloff = 12
 
 -- Forces Neovim to use use en_US.UTF8
-vim.cmd("language en_US.UTF8")
+vim.cmd("silent! language en_US.UTF8")
 
 -- Set behaviour of tabs
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+
+-- Decrease update time
+vim.opt.updatetime = 250
+
+-- Decrease mapped sequence wait time
+vim.opt.timeoutlen = 300
 
 -- vim: ts=2 sts=2 sw=2 et
