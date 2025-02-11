@@ -4,7 +4,7 @@ return {
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
-		branch = "v3.16.0",
+		tag = "v3.16.0",
 		dependencies = {
 			-- Only enables the plugin when a NerdFont is use
 			{ "nvim-tree/nvim-web-devicons", enabled = vim.g.HAVE_NERD_FONT },
