@@ -11,3 +11,7 @@
 ### Plugin Manager
 
 - [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
+
+### Keybindings
+
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
