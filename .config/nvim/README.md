@@ -12,6 +12,20 @@
 
 - [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
 
+### Fuzzy Finder
+
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+
+### Formatter
+
+- [tpope/vim-sleuth](https://github.com/tpope/vim-sleuth)
+
 ### Keybindings
 
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
+
+### Dependencies
+
+- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
