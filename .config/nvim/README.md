@@ -29,3 +29,9 @@
 
 - [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+
+## Tools Needed
+
+- [GCC](https://gcc.gnu.org/)
+- [GNU Make](https://www.gnu.org/software/make/)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
