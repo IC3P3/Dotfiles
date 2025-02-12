@@ -66,6 +66,15 @@ return {
 				builtin.command_history,
 				{ desc = "{Telescope} [S]earch [C]ommand History" }
 			)
+			vim.keymap.set("n", "<leader><leader>", function()
+				builtin.buffers({
+					sort_mru = true,
+				})
+			end, { desc = "[ ] Find existing buffers" })
+			vim.keymap.set("n", "<leader>sgb", builtin.git_branches, { desc = "{Telescope} [S]earch [G]it [B]ranchs" })
+			vim.keymap.set("n", "<leader>sgc", builtin.git_commits, { desc = "{Telescope} [S]earch [G]it [C]ommits" })
+			vim.keymap.set("n", "<leader>sgs", builtin.git_status, { desc = "{Telescope} [S]earch [G]it [S]tatus" })
+			vim.keymap.set("n", "<leader>sgt", builtin.git_stash, { desc = "{Telescope} [S]earch [G]it S[t]ash" })
 		end,
 	},
 }
