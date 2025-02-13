@@ -52,6 +52,10 @@ return {
 					F12 = "<F12>",
 				},
 			},
+			spec = {
+				{ "<leader>s", "[S]earch" },
+				{ "<leader>sg", "[S]earch [G]it" },
+			},
 		},
 	},
 }
