@@ -6,6 +6,13 @@ return {
 		config = true,
 		commit = "68f0e5c3dab23261a945272032ee6700af86227a",
 	},
+	-- Detects tabstop and shiftwidth automatically
+	-- or from EditorConfig or Modeline
+	{
+		"tpope/vim-sleuth",
+		commit = "be69bff86754b1aa5adcbb527d7fcd1635a84080",
+		event = "BufEnter",
+	},
 	-- Formates the code in the current buffer
 	{
 		"stevearc/conform.nvim",
