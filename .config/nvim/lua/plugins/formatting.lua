@@ -13,6 +13,13 @@ return {
 		commit = "be69bff86754b1aa5adcbb527d7fcd1635a84080",
 		event = "BufEnter",
 	},
+	-- "Indent guides for Neovim"
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		tag = "v3.8.7",
+		main = "ibl",
+		opts = {},
+	},
 	-- Formates the code in the current buffer
 	{
 		"stevearc/conform.nvim",
