@@ -17,7 +17,7 @@ return {
 	{
 		"stevearc/conform.nvim",
 		event = "BufWritePre",
-		tag = "v8.4.0",
+		tag = "v9.0.0",
 		cmd = { "ConformInfo" },
 		keys = {
 			{
