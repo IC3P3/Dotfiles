@@ -10,7 +10,7 @@
 
 ### Plugin Manager
 
-- [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
+- [folke/lazy.nvim](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ### Fuzzy Finder
 
