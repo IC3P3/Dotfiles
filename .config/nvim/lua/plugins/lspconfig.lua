@@ -11,11 +11,6 @@ return {
 			},
 		},
 	},
-	-- "Portable package manager for Neovim that runs everywhere Neovim runs."
-	-- TODO: Remove mason later with automatic LSP installer
-	{ "williamboman/mason.nvim", opts = {} },
-	"williamboman/mason-lspconfig.nvim",
-	"WhoIsSethDaniel/mason-tool-installer.nvim",
 	-- "nvim-lspconfig is a "data only" repo, providing basic, default Nvim
 	-- LSP client configurations for various LSP servers."
 	{
@@ -31,6 +26,11 @@ return {
 				"hrsh7th/cmp-nvim-lsp",
 				tag = "v0.0.2",
 			},
+			-- "Portable package manager for Neovim that runs everywhere Neovim runs."
+			-- TODO: Remove mason later with automatic LSP installer
+			{ "williamboman/mason.nvim", opts = {} },
+			"williamboman/mason-lspconfig.nvim",
+			"WhoIsSethDaniel/mason-tool-installer.nvim",
 		},
 		config = function()
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
