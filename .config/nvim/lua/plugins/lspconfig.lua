@@ -7,15 +7,9 @@ return {
 		ft = "lua",
 		opts = {
 			library = {
-				{ path = "luvit-meta/library", words = { "vim%.uv" } },
+				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
 			},
 		},
-	},
-	-- "Meta type definitions for the Lua platform Luvit."
-	{
-		"Bilal2453/luvit-meta",
-		commit = "1df30b60b1b4aecfebc785aa98943db6c6989716",
-		lazy = true,
 	},
 	-- "Portable package manager for Neovim that runs everywhere Neovim runs."
 	-- TODO: Remove mason later with automatic LSP installer
