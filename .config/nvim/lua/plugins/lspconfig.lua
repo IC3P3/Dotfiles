@@ -33,6 +33,49 @@ return {
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 		},
 		config = function()
+			vim.api.nvim_create_autocmd("LspAttach", {
+				group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
+				callback = function(event)
+					-- A function that lets us more easily define mappings specific for LSP
+					-- related items. It sets the mode, buffer and description for us each time.
+					local map = function(keys, func, desc, mode)
+						mode = mode or "n"
+						vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = "{LSP} " .. desc })
+					end
+
+					local tbuiltin = require("telescope.builtin")
+
+					-- Find the definition of the word under the cursor
+					map("gd", tbuiltin.lsp_definitions, "[G]oto [D]efinition")
+
+					-- Find the declaration of the word under the cursor
+					map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
+
+					-- Find references of the word under the cursor
+					map("gr", tbuiltin.lsp_references, "[G]oto [R]eferences")
+
+					-- Find implementation of the word under the cursor
+					-- Useful if a language can declare a type without an actual implementation
+					map("gi", tbuiltin.lsp_implementations, "[G]oto [I]mplementation")
+
+					-- Rename variable under cursor
+					map("<leader>cr", vim.lsp.buf.rename, "[C]ode [R]ename")
+
+					-- Execute a code action on an error under the cursor
+					map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction", { "n", "x" })
+
+					-- Displays the documentation about the word under the cursor
+					map("K", vim.lsp.buf.signature_help, "Hover Documentation")
+
+					-- Displays the documentation of the function the cursor is in
+					vim.keymap.set(
+						"i",
+						"<C-k>",
+						vim.lsp.buf.signature_help,
+						{ buffer = event.buf, desc = "{LSP} " .. "Hover Signature Information" }
+					)
+				end,
+			})
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
 			capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 

@@ -55,6 +55,7 @@ return {
 			spec = {
 				{ "<leader>s", "[S]earch" },
 				{ "<leader>sg", "[S]earch [G]it" },
+				{ "<leader>c", "[C]ode" },
 			},
 		},
 	},
