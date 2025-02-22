@@ -1,5 +1,5 @@
 return {
-	-- Automatically comlpetes pairs like brackets or quotation marks
+	-- Automatically completes pairs like brackets or quotation marks
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
