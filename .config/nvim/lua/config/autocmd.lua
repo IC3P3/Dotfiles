@@ -30,4 +30,27 @@ vim.api.nvim_create_autocmd("UIEnter", {
 	once = true,
 })
 
+-- Create the augroup for the number toggling
+local numberToggleGroup = vim.api.nvim_create_augroup("NumberToggle", { clear = true })
+
+-- Enable relative numbers when the buffer is focused
+vim.api.nvim_create_autocmd({ "BufEnter", "FocusGained", "InsertLeave", "WinEnter" }, {
+	group = numberToggleGroup,
+	callback = function()
+		if vim.wo.number and vim.api.nvim_get_mode().mode ~= "i" then
+			vim.opt.relativenumber = true
+		end
+	end,
+})
+
+-- Disable relative numbers when the buffer is not focused
+vim.api.nvim_create_autocmd({ "BufLeave", "FocusLost", "InsertEnter", "WinLeave" }, {
+	group = numberToggleGroup,
+	callback = function()
+		if vim.wo.number then
+			vim.opt.relativenumber = false
+		end
+	end,
+})
+
 -- vim: ts=2 sts=2 sw=2 et
