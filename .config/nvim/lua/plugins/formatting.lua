@@ -6,6 +6,19 @@ return {
 		config = true,
 		commit = "68f0e5c3dab23261a945272032ee6700af86227a",
 	},
+	-- Syncs tag pairs based on treesitter
+	{
+		"windwp/nvim-ts-autotag",
+		commit = "a1d526af391f6aebb25a8795cbc05351ed3620b5",
+		event = { "BufNewFile", "BufReadPre" },
+		config = function()
+			require("nvim-ts-autotag").setup({
+				options = {
+					enable_close_on_slash = true,
+				},
+			})
+		end,
+	},
 	-- Detects tabstop and shiftwidth automatically
 	-- or from EditorConfig or Modeline
 	{
