@@ -27,6 +27,7 @@ vim.api.nvim_create_autocmd("UIEnter", {
 			vim.g.neovide_detach_on_quit = "promt"
 		end
 	end,
+	once = true,
 })
 
 -- vim: ts=2 sts=2 sw=2 et
