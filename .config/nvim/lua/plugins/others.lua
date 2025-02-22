@@ -16,6 +16,31 @@ return {
 			vim.keymap.set("n", "<leader>st", ":TodoTelescope<CR>", { desc = "{TODO-Comment} [S]earch [T]odo" })
 		end,
 	},
+	-- Discord rich precense integration
+	{
+		"vyfor/cord.nvim",
+		tag = "v2.0.3",
+		build = "./build",
+		event = "VeryLazy",
+		opts = {
+			timer = {
+				interval = 2000,
+			},
+			editor = {
+				tooltip = "Powered by Neovide and Kickstart",
+			},
+			display = {
+				show_cursor_position = true,
+			},
+			lsp = {
+				show_problem_count = true,
+				severity = 2,
+			},
+			idle = {
+				disable_on_focus = true,
+			},
+		},
+	},
 }
 
 -- vim: ts=2 sts=2 sw=2 et
