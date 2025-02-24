@@ -110,4 +110,28 @@ return {
 			})
 		end,
 	},
+	{
+		"Wansmer/symbol-usage.nvim",
+		commit = "0f9b3da014b7e41559b643e7461fcabb2a7dc83a",
+		event = "LspAttach",
+		config = function()
+			require("symbol-usage").setup({
+				log = {
+					enabled = false,
+					level = "ERROR",
+					stdout = {
+						enabled = true,
+					},
+					log_file = {
+						enabled = false,
+						path = "",
+					},
+					notify = {
+						enabld = true,
+					},
+				},
+				filetypes = {},
+			})
+		end,
+	},
 }
