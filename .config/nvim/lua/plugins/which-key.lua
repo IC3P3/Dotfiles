@@ -7,7 +7,11 @@ return {
 		tag = "v3.16.0",
 		dependencies = {
 			-- Only enables the plugin when a NerdFont is use
-			{ "nvim-tree/nvim-web-devicons", enabled = vim.g.HAVE_NERD_FONT },
+			{
+				"nvim-tree/nvim-web-devicons",
+				commit = "1020869742ecb191f260818234517f4a1515cfe8",
+				enabled = vim.g.HAVE_NERD_FONT,
+			},
 		},
 		opts = {
 			-- Instant response on button press
