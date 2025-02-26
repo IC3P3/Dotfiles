@@ -1,4 +1,5 @@
 return {
+	-- "Directory browser for Neovim, inspired by Ranger"
 	{
 		"simonmclean/triptych.nvim",
 		commit = "4ac0dfbfc2fd2b5d247cde16b323ed0e289c4f22",
@@ -21,6 +22,7 @@ return {
 		},
 		opts = {
 			extension_mappings = {
+				-- Fuzzy find inside of Triptych
 				["<c-f>"] = {
 					mode = "n",
 					fn = function(target, _)
@@ -32,6 +34,7 @@ return {
 			},
 		},
 		keys = {
+			-- Opens the Triptych file browser
 			{ "<leader>-", ":Triptych<CR>" },
 		},
 		options = {

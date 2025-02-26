@@ -53,30 +53,53 @@ return {
 				}, ",") .. "}",
 			}
 
+			-- Search through the vimdocs
 			vim.keymap.set("n", "<leader>sh", builtin.help_tags, { desc = "{Telescope} [S]earch [H]elp" })
+
+			-- Fuzzy find every file in the cwd
 			vim.keymap.set("n", "<leader>sf", function()
 				builtin.find_files({
 					find_command = find_command,
 				})
 			end, { desc = "{Telescope} [S]earch [F]iles" })
-			vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "{Telescope} [S]earch current [W]ord" })
+
+			-- Live grep in the cwd
 			vim.keymap.set("n", "<leader>se", builtin.live_grep, { desc = "{Telescope} [S]earch Gr[e]p" })
+
+			-- Live grep but with the word under the cursor already given
+			vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "{Telescope} [S]earch current [W]ord" })
+
+			-- Lists all diagnostics in telescope
 			vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "{Telescope} [S]earch [Diagnostics]" })
+
+			-- Probably remove later
 			vim.keymap.set("n", "<leader>sr", builtin.oldfiles, { desc = "{Telescope} [S]earch [R]ecent Files" })
+
+			-- Search through command history
 			vim.keymap.set(
 				"n",
 				"<leader>sc",
 				builtin.command_history,
 				{ desc = "{Telescope} [S]earch [C]ommand History" }
 			)
+
+			-- Search through currently open buffers
 			vim.keymap.set("n", "<leader><leader>", function()
 				builtin.buffers({
 					sort_mru = true,
 				})
 			end, { desc = "[ ] Find existing buffers" })
+
+			-- List all git branches
 			vim.keymap.set("n", "<leader>sgb", builtin.git_branches, { desc = "{Telescope} [S]earch [G]it [B]ranchs" })
+
+			-- Search through most commits (doesn't show every commit in bigger repositories)
 			vim.keymap.set("n", "<leader>sgc", builtin.git_commits, { desc = "{Telescope} [S]earch [G]it [C]ommits" })
+
+			-- List everything listed in git status
 			vim.keymap.set("n", "<leader>sgs", builtin.git_status, { desc = "{Telescope} [S]earch [G]it [S]tatus" })
+
+			-- Lists the all stashes
 			vim.keymap.set("n", "<leader>sgt", builtin.git_stash, { desc = "{Telescope} [S]earch [G]it S[t]ash" })
 		end,
 	},

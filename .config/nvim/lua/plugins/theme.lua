@@ -1,4 +1,5 @@
 return {
+	-- "All natural pine, faux fur and a bit of soho vibes for the classy minimalist"
 	{
 		"rose-pine/neovim",
 		as = "rose-pine",

@@ -136,6 +136,7 @@ return {
 			})
 		end,
 	},
+	-- "Display references, definitions and implementations of document symbols."
 	{
 		"Wansmer/symbol-usage.nvim",
 		commit = "0f9b3da014b7e41559b643e7461fcabb2a7dc83a",

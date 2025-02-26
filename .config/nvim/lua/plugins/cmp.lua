@@ -7,14 +7,18 @@ return {
 		tag = "v0.0.2",
 		dependencies = {
 			{
+				-- "nvim-cmp source for neovim builtin LSP client"
 				"hrsh7th/cmp-nvim-lsp",
 				commit = "99290b3ec1322070bcfb9e846450a46f6efa50f0",
 			},
 			{
+				-- "nvim-cmp source for path"
 				"hrsh7th/cmp-path",
 				commit = "91ff86cd9c29299a64f968ebb45846c485725f23",
 			},
 			{
+				-- "nvim-cmp source for displaying function signatures with the
+				-- current parameter emphasized."
 				"hrsh7th/cmp-nvim-lsp-signature-help",
 				commit = "031e6ba70b0ad5eee49fd2120ff7a2e325b17fa7",
 			},
