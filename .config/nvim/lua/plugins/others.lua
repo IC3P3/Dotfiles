@@ -51,7 +51,7 @@ return {
 		"lukas-reineke/indent-blankline.nvim",
 		tag = "v3.8.7",
 		main = "ibl",
-		require("ibl").setup(),
+		opts = {},
 	},
 	-- "Rainbow delimiters for Neovim with Tree-sitter"
 	{
