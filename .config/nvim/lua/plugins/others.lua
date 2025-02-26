@@ -19,7 +19,7 @@ return {
 	-- Discord rich precense integration
 	{
 		"vyfor/cord.nvim",
-		tag = "v2.0.3",
+		tag = "v2.1.0",
 		build = "./build",
 		event = "VeryLazy",
 		opts = {
