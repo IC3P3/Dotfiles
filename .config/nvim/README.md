@@ -85,3 +85,4 @@
 - [GNU Make](https://www.gnu.org/software/make/)
 - [plocate](https://plocate.sesse.net/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [rustup](https://rustup.rs/)

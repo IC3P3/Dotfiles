@@ -6,3 +6,6 @@ vim.g.REPO_SEARCH_DIRS = {
 	"~/Desktop/Dev",
 	"~/.dotfiles",
 }
+
+-- Sets where the images of codesnap should be saved
+vim.g.CODESNAP_SAVE_PATH = os.getenv("HOME") .. "/Pictures/CodeSnap"

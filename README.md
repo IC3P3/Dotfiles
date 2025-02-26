@@ -22,6 +22,7 @@
 
 - [GCC](https://gcc.gnu.org/)
 - [GNU Make](https://www.gnu.org/software/make/)
+- [rustup](https://rustup.rs/)
 
 ### Fonts
 

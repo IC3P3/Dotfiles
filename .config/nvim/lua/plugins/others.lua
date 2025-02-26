@@ -58,6 +58,31 @@ return {
 		"HiPhish/rainbow-delimiters.nvim",
 		tag = "v0.8.0",
 	},
+	-- "Snapshot plugin with rich features that can make pretty
+	-- code snapshots for Neovim"
+	{
+		"mistricky/codesnap.nvim",
+		tag = "v1.6.1",
+		build = "make",
+		event = "VeryLazy",
+		keys = {
+			{ "<leader>cc", "<cmd>CodeSnap<cr>", mode = "x", desc = "[C]odeSnap to [C]lipboard" },
+			{ "<leader>cf", "<cmd>CodeSnapSave<cr>", mode = "x", desc = "[C]odeSnap Save to [F]ile" },
+		},
+		config = function()
+			require("codesnap").setup({
+				save_path = vim.g.CODESNAP_SAVE_PATH,
+				has_breadcrumbs = false,
+				show_workspace = false,
+				has_line_number = true,
+				bg_theme = "dusk",
+				bg_y_padding = 50,
+				bg_x_padding = 75,
+				watermark = "",
+				code_font_family = "Lilex Nerd Font",
+			})
+		end,
+	},
 }
 
 -- vim: ts=2 sts=2 sw=2 et
