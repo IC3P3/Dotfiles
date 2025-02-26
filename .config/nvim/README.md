@@ -10,7 +10,7 @@
 
 ### Plugin Manager
 
-- [folke/lazy.nvim](https://github.com/nvim-treesitter/nvim-treesitter)
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ### Code Completion
 
@@ -29,18 +29,24 @@
 
 - [mfussenegger/nvim-lint](https://github.com/mfussenegger/nvim-lint)
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-
-### Fuzzy Finder
-
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+- [Wansmer/symbol-usage.nvim](https://github.com/Wansmer/symbol-usage.nvim)
 
 ### Formatter
 
 - [stevearc/conform.nvim](https://github.com/stevearc/conform.nvim)
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
 - [tpope/vim-sleuth](https://github.com/tpope/vim-sleuth)
+
+### Fuzzy Finder
+
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+
+### Files
+
+- [simonmclean/triptych.nvim](https://github.com/simonmclean/triptych.nvim)
 
 ### Keybindings
 
@@ -48,7 +54,15 @@
 
 ### Quality of Life (QoL)
 
+- [folke/todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
 - [echasnovski/mini.nvim](https://github.com/echasnovski/mini.nvim)
+  - [mini.ai](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md)
+  - [mini.surround](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-surround.md)
+  - [mini.move](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-move.md)
+
+### Media
+
+- [vyfor/cord.nvim](https://github.com/vyfor/cord.nvim)
 
 ### Themes
 
@@ -57,6 +71,7 @@
 ### Dependencies
 
 - [j-hui/fidget.nvim](https://github.com/j-hui/fidget.nvim)
+- [antosha417/nvim-lsp-file-operations](https://github.com/antosha417/nvim-lsp-file-operations)
 - [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 
