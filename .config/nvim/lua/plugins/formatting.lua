@@ -3,8 +3,21 @@ return {
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
-		config = true,
 		commit = "68f0e5c3dab23261a945272032ee6700af86227a",
+		dependencies = {
+			{
+				"hrsh7th/nvim-cmp",
+				tag = "v0.0.2",
+			},
+		},
+		config = function()
+			require("nvim-autopairs").setup({})
+
+			-- If you want to automatically add `(` after selecting a function or method
+			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+			local cmp = require("cmp")
+			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+		end,
 	},
 	-- Syncs tag pairs based on treesitter
 	{
