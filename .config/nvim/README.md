@@ -60,6 +60,7 @@
   - [mini.ai](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md)
   - [mini.surround](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-surround.md)
   - [mini.move](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-move.md)
+- [airblade/vim-rooter](https://github.com/airblade/vim-rooter/)
 
 ### Media
 
