@@ -43,6 +43,7 @@
 
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+- [cljoly/telescope-repo.nvim](https://github.com/cljoly/telescope-repo.nvim)
 
 ### Files
 
@@ -77,6 +78,9 @@
 
 ## Tools Needed
 
+- [bat](https://github.com/sharkdp/bat)
+- [fd](https://github.com/sharkdp/fd)
 - [GCC](https://gcc.gnu.org/)
 - [GNU Make](https://www.gnu.org/software/make/)
+- [plocate](https://plocate.sesse.net/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)

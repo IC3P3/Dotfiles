@@ -13,6 +13,9 @@
 
 ### CLI-Tools
 
+- [bat](https://github.com/sharkdp/bat)
+- [fd](https://github.com/sharkdp/fd)
+- [plocate](https://plocate.sesse.net/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ### Build-Tools

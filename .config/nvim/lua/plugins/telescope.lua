@@ -29,6 +29,12 @@ return {
 				"nvim-tree/nvim-web-devicons",
 				enabled = vim.g.have_nerd_font,
 			},
+			-- "Jump into the repositories (git, mercurial…) of your filesystem with
+			-- telescope.nvim, without any setup."
+			{
+				"cljoly/telescope-repo.nvim",
+				commit = "a5395a4bf0fd742cc46b4e8c50e657062f548ba9",
+			},
 		},
 		config = function()
 			require("telescope").setup({
@@ -36,12 +42,22 @@ return {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown(),
 					},
+					["repo"] = {
+						list = {
+							fd_opts = {
+								"--no-ignore-vcs",
+							},
+							tail_path = true,
+							search_dirs = vim.g.REPO_SEARCH_DIRS,
+						},
+					},
 				},
 			})
 
 			-- Enables the telescope plugins
 			pcall(require("telescope").load_extension, "fzf")
 			pcall(require("telescope").load_extension, "ui-select")
+			pcall(require("telescope").load_extension, "repo")
 
 			-- Import default telescope functions
 			local builtin = require("telescope.builtin")
