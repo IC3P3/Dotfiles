@@ -5,6 +5,13 @@ return {
 		event = "VimEnter",
 		tag = "0.1.8",
 		dependencies = {
+			-- "It sets vim.ui.select to telescope. That means for example that
+			-- neovim core stuff can fill the telescope picker. Example would
+			-- be lua vim.lsp.buf.code_action()."
+			{
+				"nvim-telescope/telescope-ui-select.nvim",
+				commit = "6e51d7da30bd139a6950adf2a47fda6df9fa06d2",
+			},
 			{
 				"nvim-lua/plenary.nvim",
 				commit = "857c5ac632080dba10aae49dba902ce3abf91b35",
