@@ -44,7 +44,7 @@ return {
 		"lukas-reineke/indent-blankline.nvim",
 		tag = "v3.8.7",
 		main = "ibl",
-		opts = {},
+		require("ibl").setup(),
 	},
 	-- Formates the code in the current buffer
 	{

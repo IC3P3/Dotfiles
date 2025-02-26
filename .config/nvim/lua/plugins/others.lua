@@ -46,6 +46,13 @@ return {
 		"airblade/vim-rooter",
 		commit = "51402fb77c4d6ae94994e37dc7ca13bec8f4afcc",
 	},
+	-- "Indent guides for Neovim"
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		tag = "v3.8.7",
+		main = "ibl",
+		require("ibl").setup(),
+	},
 }
 
 -- vim: ts=2 sts=2 sw=2 et
