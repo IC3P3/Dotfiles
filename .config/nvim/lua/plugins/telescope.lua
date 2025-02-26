@@ -16,6 +16,7 @@ return {
 				"nvim-lua/plenary.nvim",
 				commit = "857c5ac632080dba10aae49dba902ce3abf91b35",
 			},
+			-- "FZF sorter for telescope written in c."
 			{
 				"nvim-telescope/telescope-fzf-native.nvim",
 				build = "make",
