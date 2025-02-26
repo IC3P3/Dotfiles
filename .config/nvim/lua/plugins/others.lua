@@ -41,6 +41,11 @@ return {
 			},
 		},
 	},
+	-- "Changes Vim working directory to project root."
+	{
+		"airblade/vim-rooter",
+		commit = "51402fb77c4d6ae94994e37dc7ca13bec8f4afcc",
+	},
 }
 
 -- vim: ts=2 sts=2 sw=2 et
