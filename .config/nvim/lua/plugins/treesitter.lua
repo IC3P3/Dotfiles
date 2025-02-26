@@ -21,6 +21,23 @@ return {
 			indent = { enable = true, disable = {} },
 		},
 	},
+	-- "Neovim plugin for splitting/joining blocks of code."
+	{
+		"Wansmer/treesj",
+		commit = "48c1a7539f376fd40ceb9cf12d697040fcf90649",
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+		},
+		keys = {
+			{ "<leader>tb", require("treesj").toggle(), mode = "n", desc = "{TreeSJ} [T]oggle Code [B]lock" },
+		},
+		config = function()
+			require("treesj").setup({
+				use_default_keymaps = false,
+				cursor_behavior = "start",
+			})
+		end,
+	},
 }
 
 -- vim: ts=2 sts=2 sw=2 et
