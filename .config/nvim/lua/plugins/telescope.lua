@@ -111,6 +111,14 @@ return {
 				})
 			end, { desc = "[ ] Find existing buffers" })
 
+			-- Lists all project (by found by VCS) in given paths
+			vim.keymap.set(
+				"n",
+				"<leader>sp",
+				require("telescope").extensions.repo.list,
+				{ desc = "[S]earch [P]roject" }
+			)
+
 			-- List all git branches
 			vim.keymap.set("n", "<leader>sgb", builtin.git_branches, { desc = "{Telescope} [S]earch [G]it [B]ranchs" })
 
