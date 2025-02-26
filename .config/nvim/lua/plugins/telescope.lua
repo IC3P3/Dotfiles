@@ -27,7 +27,7 @@ return {
 			-- Only enables web-devicons with NerdFonts
 			{
 				"nvim-tree/nvim-web-devicons",
-				enabled = vim.g.have_nerd_font,
+				enabled = vim.g.HAVE_NERD_FONT,
 			},
 			-- "Jump into the repositories (git, mercurial…) of your filesystem with
 			-- telescope.nvim, without any setup."
