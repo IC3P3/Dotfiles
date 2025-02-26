@@ -72,9 +72,6 @@ return {
 			-- Lists all diagnostics in telescope
 			vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "{Telescope} [S]earch [Diagnostics]" })
 
-			-- Probably remove later
-			vim.keymap.set("n", "<leader>sr", builtin.oldfiles, { desc = "{Telescope} [S]earch [R]ecent Files" })
-
 			-- Search through command history
 			vim.keymap.set(
 				"n",
