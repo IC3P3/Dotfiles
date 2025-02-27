@@ -29,7 +29,14 @@ return {
 			"nvim-treesitter/nvim-treesitter",
 		},
 		keys = {
-			{ "<leader>tb", require("treesj").toggle(), mode = "n", desc = "{TreeSJ} [T]oggle Code [B]lock" },
+			{
+				"<leader>tb",
+				function()
+					require("treesj").toggle()
+				end,
+				mode = "n",
+				desc = "{TreeSJ} [T]oggle Code [B]lock",
+			},
 		},
 		config = function()
 			require("treesj").setup({
