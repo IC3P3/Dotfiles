@@ -60,7 +60,12 @@
   - [mini.ai](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md)
   - [mini.surround](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-surround.md)
   - [mini.move](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-move.md)
-- [airblade/vim-rooter](https://github.com/airblade/vim-rooter/)
+- [airblade/vim-rooter](https://github.com/airblade/vim-rooter)
+
+### Practice
+
+- [m4xshen/hardtime.nvim](https://github.com/m4xshen/hardtime.nvim)
+- [tris203/precognition.nvim](https://github.com/tris203/precognition.nvim)
 
 ### Media
 
@@ -73,6 +78,7 @@
 ### Dependencies
 
 - [j-hui/fidget.nvim](https://github.com/j-hui/fidget.nvim)
+- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
 - [antosha417/nvim-lsp-file-operations](https://github.com/antosha417/nvim-lsp-file-operations)
 - [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
