@@ -10,9 +10,12 @@ return {
 			})
 
 			-- Toggles the Precognition plugin
-			vim.keymap.set("n", "<leader>pp", function()
-				require("precognition").toggle()
-			end, { desc = "{Precognition} [P]ractice toggle [P]recognition" })
+			vim.keymap.set(
+				"n",
+				"<leader>pp",
+				require("precognition").toggle,
+				{ desc = "{Precognition} [P]ractice toggle [P]recognition" }
+			)
 		end,
 	},
 	-- "Establish good command workflow and quit bad habit."
