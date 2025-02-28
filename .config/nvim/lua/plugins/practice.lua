@@ -29,13 +29,12 @@ return {
 			require("hardtime").setup({})
 
 			-- Toggles if hardtime is active or not and tells you if it's turned on or off
-			vim.keymap.set("n", "<leader>ph", function()
-				if require("hardtime").toggle() then
-					vim.notify("Enabled practice plugin Hardtime")
-				else
-					vim.notify("Disabled practice plugin Hardtime")
-				end
-			end, { desc = "{Hardtime} [P]ractice toggle [H]ardtime" })
+			vim.keymap.set(
+				"n",
+				"<leader>ph",
+				require("hardtime").toggle,
+				{ desc = "{Hardtime} [P]ractice toggle [H]ardtime" }
+			)
 
 			-- Gives you a report of the most common mistakes
 			vim.keymap.set("n", "<leader>pr", "<cmd>Hardtime report<CR>", { desc = "{Hardtime} [P]ractice [R]eport" })
