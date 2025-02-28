@@ -60,7 +60,7 @@ return {
 				{ "<leader>s", "[S]earch" },
 				{ "<leader>sg", "[S]earch [G]it" },
 				{ "<leader>c", "[C]ode" },
-				{ "<leader>p", "[P]ractice}" },
+				{ "<leader>p", "[P]ractice" },
 			},
 		},
 	},
