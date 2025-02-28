@@ -26,7 +26,9 @@ return {
 			},
 		},
 		config = function()
-			require("hardtime").setup({})
+			require("hardtime").setup({
+				enabled = false,
+			})
 
 			-- Toggles if hardtime is active or not and tells you if it's turned on or off
 			vim.keymap.set(
