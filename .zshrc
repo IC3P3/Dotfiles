@@ -41,3 +41,7 @@ setopt hist_find_no_dups
 bindkey '^y' autosuggest-accept
 bindkey '^n' history-search-forward
 bindkey '^p' history-search-backward
+
+# Aliases
+alias ls='ls -vA --color'
+alias ll='ls -vAl --color'
