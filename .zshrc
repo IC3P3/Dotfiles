@@ -7,6 +7,9 @@ if [ ! -d "$ZINIT_HOME" ]; then
     git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
+# Environmental variables
+export EDITOR=nvim
+
 # Source configuration files given by plugins
 source "${ZINIT_HOME}/zinit.zsh"
 
