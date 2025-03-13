@@ -30,7 +30,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 # Load all completions
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # Configure styling
