@@ -24,6 +24,10 @@ zinit light zsh-users/zsh-autosuggestions
 # Load all completions
 autoload -U compinit && compinit
 
+# Configure completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
 # Set how to add a history
 HISTFILE=~/.zsh-history
 HISTSIZE=10000
