@@ -14,6 +14,7 @@ if [ -n "$TTY" ]; then
 else
     export GPG_TTY="$TTY"
 fi
+export PATH=$PATH:/usr/local/go/bin
 
 # Source configuration files given by plugins
 source "${ZINIT_HOME}/zinit.zsh"
