@@ -10,6 +10,9 @@ fi
 # Source configuration files given by plugins
 source "${ZINIT_HOME}/zinit.zsh"
 
+# Load shell integrations
+eval "$(fzf --zsh)"
+
 # Load the starship.rs theme
 zinit ice as"command" from"gh-r" \
     atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
@@ -20,6 +23,7 @@ zinit light starship/starship
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
 
 # Load all completions
 autoload -U compinit && compinit
@@ -27,6 +31,7 @@ autoload -U compinit && compinit
 # Configure completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
 
 # Set how to add a history
 HISTFILE=~/.zsh-history
