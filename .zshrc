@@ -27,6 +27,7 @@ zinit light Aloxaf/fzf-tab
 
 # Load all completions
 autoload -U compinit && compinit
+zinit cdreplay -q
 
 # Configure styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
