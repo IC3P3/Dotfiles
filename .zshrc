@@ -39,3 +39,5 @@ setopt hist_find_no_dups
 
 # Keybindings
 bindkey '^y' autosuggest-accept
+bindkey '^n' history-search-forward
+bindkey '^p' history-search-backward
