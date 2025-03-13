@@ -9,6 +9,11 @@ fi
 
 # Environmental variables
 export EDITOR=nvim
+if [ -n "$TTY" ]; then
+    export GPG_TTY=$(tty)
+else
+    export GPG_TTY="$TTY"
+fi
 
 # Source configuration files given by plugins
 source "${ZINIT_HOME}/zinit.zsh"
