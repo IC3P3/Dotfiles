@@ -58,6 +58,10 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# Various settings
+setopt autocd
+unsetopt beep
+
 # Keybindings
 bindkey -v
 bindkey '^y' autosuggest-accept
