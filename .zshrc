@@ -22,3 +22,9 @@ fi
 
 # Source configuration files given by plugins
 source "${ZINIT_HOME}/zinit.zsh"
+
+# Load the starship.rs theme
+zinit ice as"command" from"gh-r" \
+    atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+    atpull"%aclone" src"init.zsh"
+zinit light starship/starship
