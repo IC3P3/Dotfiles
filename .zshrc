@@ -12,6 +12,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # Load shell integrations
 eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # Load the starship.rs theme
 zinit ice as"command" from"gh-r" \
@@ -34,6 +35,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Set how to add a history
 HISTFILE=~/.zsh-history
