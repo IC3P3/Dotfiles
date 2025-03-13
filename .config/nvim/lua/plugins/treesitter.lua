@@ -9,6 +9,7 @@ return {
 			ensure_installed = {
 				"lua",
 				"luadoc",
+				"hyprlang",
 			},
 			auto_install = true,
 			highlight = {
