@@ -1,2 +1,4 @@
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export QT_QPA_PLATFORM=wayland
+
+export XCURSOR_SIZE=24
