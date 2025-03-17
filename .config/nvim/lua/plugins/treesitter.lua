@@ -11,6 +11,9 @@ return {
 				"luadoc",
 				"hyprlang",
 			},
+			vim.filetype.add({
+				pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+			}),
 			auto_install = true,
 			highlight = {
 				enable = true,
