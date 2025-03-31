@@ -9,8 +9,10 @@
 
 ### Software
 
+- [Hyprland](https://hyprland.org/)
 - [Neovide](https://neovide.dev/)
 - [Neovim](https://neovim.io/)
+- [Waybar](https://github.com/Alexays/Waybar)
 - [zsh](https://zsh.org/)
 
 ### CLI-Tools
@@ -32,3 +34,7 @@
 ### Fonts
 
 - [Lilex Nerd Font,FiraCode Nerd Font and/or JetBrainsMono Nerd Font](https://www.nerdfonts.com/)
+
+## Special Thanks
+
+- **[simple-hyprland](https://github.com/gaurav23b/simple-hyprland)**: For giving me a simple start to build up on.
