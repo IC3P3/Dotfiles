@@ -37,4 +37,5 @@
 
 ## Special Thanks
 
-- **[simple-hyprland](https://github.com/gaurav23b/simple-hyprland)**: For giving me a simple start to build up on.
+- **[yurihikari/garuda-hyprdots](https://github.com/yurihikari/garuda-hyprdots)**: For some configs outside of Hyprland.
+- **[gaurav23b/simple-hyprland](https://github.com/gaurav23b/simple-hyprland)**: For giving me a simple start to build up on.
