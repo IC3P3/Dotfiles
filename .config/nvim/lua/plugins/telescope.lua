@@ -48,7 +48,10 @@ return {
 								"--no-ignore-vcs",
 							},
 							tail_path = true,
-							search_dirs = vim.g.REPO_SEARCH_DIRS,
+							search_dirs = {
+								"~/Schreibtisch/Development",
+								"~/.Dotfiles",
+							},
 						},
 					},
 				},
@@ -74,6 +77,8 @@ return {
 					".keep",
 					".git-keep",
 					".gitkeep",
+					"node_modules",
+					".svelte-kit",
 				}, ",") .. "}",
 			}
 

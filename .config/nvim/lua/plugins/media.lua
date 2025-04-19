@@ -12,7 +12,7 @@ return {
 		},
 		config = function()
 			require("codesnap").setup({
-				save_path = vim.g.CODESNAP_SAVE_PATH,
+				save_path = os.getenv("HOME") .. "/Bilder/CodeSnap",
 				has_breadcrumbs = false,
 				show_workspace = false,
 				has_line_number = true,
