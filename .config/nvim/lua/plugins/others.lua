@@ -33,6 +33,11 @@ return {
 		"HiPhish/rainbow-delimiters.nvim",
 		tag = "v0.8.0",
 	},
+	-- "Run `nix develop` without restarting neovim"
+	{
+		"figsoda/nix-develop.nvim",
+		commit = "afea026f5c478c000a8af8de87f7b711676387ab",
+	},
 }
 
 -- vim: ts=2 sts=2 sw=2 et
