@@ -7,7 +7,11 @@ return {
 		event = { "BufReadPre", "BufNewFile" },
 		config = function()
 			local lint = require("lint")
-			lint.linters_by_ft = {}
+			lint.linters_by_ft = {
+				markdown = { "markdownlint" },
+				javascript = { "eslint" },
+				typescript = { "eslint" },
+			}
 			-- Create autocommand which carries out the actual linting
 			-- on the specified events.
 			local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

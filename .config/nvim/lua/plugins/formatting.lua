@@ -75,6 +75,11 @@ return {
 			-- A list of all used formatters
 			formatters_by_ft = {
 				lua = { "stylua" },
+				javascript = { "prettierd", stop_after_first = true },
+				typescript = { "prettierd", stop_after_first = true },
+				html = { "prettierd", stop_after_first = true },
+				markdown = { "prettierd", stop_after_first = true },
+				nix = { "nixpkgs-fmt" },
 			},
 		},
 	},
